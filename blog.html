@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- main css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- project css file -->
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/about_blog.css">
+    <title>Cafeu</title>
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light position-sticky top-0">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/pic/logo.webp" alt="logo"></a>
+     <a class="btn navbar-toggler " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+      </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item ">
+          <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        
+        <li class="nav-item pt-1 to_main_col nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <div class="d-flex gap-3">
+        <img src="./assets/pic/header_call.webp" alt="call">
+        <span class="num_call">+880 123 456 789</span>
+  
+
+      </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cafeu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body ">
+    <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-2">
+        <li class="nav-item ">
+          <a class="nav-link sec_col to_main_col" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col active" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link sec_col to_main_col dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item to_main_col" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item to_main_col" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="to_main_col sec_col nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+  </div>
+</div>
+
+<div class="blog_hero d-flex align-items-center justify-cintent-center">
+  <h1 class="text-light text-center w-100 ">Blog Details</h1>
+</div>
+
+<div class="Bcontent_box p-5">
+  <div class="container">
+    <div class="d-flex flex-wrap">
+
+      <div class="blog_cont_part1 col-xl-8 col-lg-6 col-md-12 ">
+        <div class="border_b">
+
+          <img src="./assets/pic/blog-section/part1-1l.webp" alt="">
+
+        <div class="d-flex gap-4 p-4">
+          <div class="d-flex gap-2">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>03 Jan, 2022</p>
+          </div >
+          <div class="d-flex gap-2">
+            <i class="fa-solid fa-user"></i>
+            <p>Admin</p>
+          </div>
+          <div class="d-flex gap-2">
+            <i class="fa-solid fa-comments"></i>
+            <p>No Comments</p>
+          </div>
+        </div>
+       <div class="px-4">
+         <h2 class="text-dark fw-bold fs-1">Special Deal if you Order 3 Pizza's</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accums lacus vel facilisis. rorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accums lacus vel facilisis. rorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
+        <img class="py-3" src="./assets/pic/blog-section/part_1_2.webp" alt="">
+
+        <p class="text-dark fw-bold fs-2 py-3">Special Food Recipes for Special</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accums lacus vel facilisis. rorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun labore et dolore magna aliqua. Quis ipsum suspendisse ultrices</p>
+
+        <div class="d-flex gap-3 part_1_btn_box py-3">
+          <span class="text-dark fs-5">Post Tags:</span>
+          <a class="fs-5" href="#">fish</a>
+          <a class="fs-5" href="#">food</a>
+          <a class="fs-5" href="#">launch</a>
+          <a class="fs-5" href="#">tasty</a>
+          <a class="fs-5" href="#">crispy</a>
+
+        </div>
+       </div>
+
+
+        </div>
+
+       <div class="comments ">
+  <div class="container">
+   <div class="w__70">
+     <h2 class="text-dark fs-3">3 Comments</h2>
+
+
+     <div class="comment_box ">
+      <div class="d-flex">
+        <div>
+          <img src="./assets/pic/blog-section/comment1.webp" alt="">
+        </div>
+      
+      <div class="px-3">
+        <p class="text-dark fw-bold">Eunice J. Roller</p>
+        <div class="d-flex justify-content-between pe-3">
+          <span>Jan 1, 2022</span>
+          <a class="reply" href="#">reply</a>
+        </div>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+      </div>
+</div>
+     </div>
+
+     <div class="comment_box p-5 ">
+      <div class="d-flex px-5">
+        <div>
+          <img src="./assets/pic/blog-section/comment2.webp" alt="">
+        </div>
+      
+      <div class="px-3">
+        <p class="text-dark fw-bold">Bryan L. Parker</p>
+       <div class="d-flex justify-content-between pe-3">
+          <span>March 1, 2022</span>
+          <a class="reply" href="#">reply</a>
+        </div>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+      </div>
+</div>
+     </div>
+
+     <div class="comment_box ">
+      <div class="d-flex">
+        <div>
+          <img src="./assets/pic/blog-section/comment1.webp" alt="">
+        </div>
+      
+      <div class="px-3">
+        <p class="text-dark fw-bold">Paul E. Johnson</p>
+        <div class="d-flex justify-content-between pe-3">
+          <span>February 5, 2022</span>
+          <a class="reply" href="#">reply</a>
+        </div>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+
+      </div>
+</div>
+     </div>
+
+
+   </div>
+
+  </div>
+      </div>
+
+
+    <div>
+      <div class="container  py-5">
+        <div >
+          <h2 class="text-dark">Leave A Comment</h2>
+          <div class="d-flex gap-5 py-4 justify-content-between">
+            <div class="form-floating flex-grow-1">
+              <input type="text" id="name" class="  form-control  main_col_border"  placeholder="name">
+              <label for="name">name</label>
+            </div>
+            <div class="form-floating flex-grow-1 ">
+            <input id="email" type="email"class=" form-control main_col_border" placeholder="Email">
+              <label for="email">email</label>
+            </div>
+          </div>
+        <div class="form-floating pb-4">
+            <textarea  class="form-control main_col_border" placeholder="Message" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Message</label>
+          </div>
+        </div>
+        <a class="sum_com " href="#">summit comment</a>
+      </div>
+    </div>
+
+      </div>
+
+      <div class="blog_cont_part2 px-5 col-xl-4 col-lg-6 col-md-12">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Enter your Email" aria-describedby="button-addon2">
+          <button class="btn " type="button" id="button-addon2"><i class="text-light fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <h2 class="text-dark fs-5 fw-bold pb-2 mb-3">Latest Post</h2>
+
+        <div>
+          
+          <div class="card "  >
+            <div class="row g-0">
+              <div class="col-md-4 Latest_Post_pic_box">
+                <img src="./assets/pic/blog-section/latest-post1.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title to_main_col text-dark">10 Reasons To Do A Digital Detox Challenge</h5>
+                  <p class="card-text"><small class="text-muted">3 Jan, 2022</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card "  >
+            <div class="row g-0">
+              <div class="col-md-4 Latest_Post_pic_box">
+                <img src="./assets/pic/blog-section/latest-post-2.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title to_main_col text-dark">10 Reasons To Do A Digital Detox Challenge</h5>
+                  <p class="card-text"><small class="text-muted">3 Jan, 2022</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card "  >
+            <div class="row g-0">
+              <div class="col-md-4 Latest_Post_pic_box">
+                <img src="./assets/pic/blog-section/latest-post-3.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title to_main_col text-dark">10 Reasons To Do A Digital Detox Challenge</h5>
+                  <p class="card-text"><small class="text-muted">3 Jan, 2022</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <p class="text-dark fs-5 fw-bold pb-2 mb-3 secandary_border">All Service</p>
+
+       <div class="w-100 py-3">
+        
+        <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i>  Organic Vegetables</p>
+          <p class="ms-auto">(07)</p>
+        </div>
+
+        <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i>  Fresh Fruits</p>
+          <p class="ms-auto">(05)</p>
+        </div>
+
+        <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i> Fresh Vegetables</p>
+          <p class="ms-auto">(10)</p>
+        </div>
+
+        <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i>  Our Restaurant</p>
+          <p class="ms-auto">(13)</p>
+        </div>
+
+        <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i>  Special Food</p>
+          <p class="ms-auto">(15)</p>
+        </div>
+
+         <div class="d-flex All_Service_con">
+          <p class="to_main_col"> <i class="fa-solid fa-arrow-right"></i>  Organic Product</p>
+          <p class="ms-auto">(17)</p>
+        </div>
+
+
+       </div>
+
+       <div id="carouselExampleControls" class="py-5 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/pic/blog-section/blog-sc-1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/pic/blog-section/blog-sc-2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/pic/blog-section/blog-sc-3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <div class="span_box"><span class="carousel-control-prev-icon " aria-hidden="true"></span></div>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <div class="span_box"><span class="carousel-control-next-icon " aria-hidden="true"></span></div>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="text-dark fs-4 fw-bold pb-2 mb-3 secandary_border">Tags</p>
+      <div class="tag_box">
+        <a href="#">Fresh</a>
+        <a href="#">Food</a>
+        <a href="#">Tasty</a>
+        <a href="#">Crispy</a>
+
+      </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<footer >
+  <div class="container text-light">
+    <div class=" row p-5 justify-content-between  ">
+
+      <div class="foot_1 col-sm-6 col-md-4 col-lg-3 mb-4  ">
+          <div class="d-flex flex-column justify-content-between gap-3 align-items-start">
+            <img src="./assets/pic/footer logo.png" alt="">
+            <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col ">4920 Trails End Road Ft United </p>
+                <span class="p-0 m-0 to_main_col">States, FL 33311</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">nfo@example.com</p>
+                <span class="p-0 m-0 to_main_col">test@example.com</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-phone fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">+123 456 679 123</p>
+                <span class="p-0 m-0 to_main_col" > +123 456 789</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="foot_2 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div>
+
+              <p class="my-3 fs-3" >Quick links</p>
+            <ul class="d-flex flex-column gap-2 ">
+
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+              <li class="to_main_col">Cake</li>
+              <li class="to_main_col">Chocolate</li>
+              <li class="to_main_col">Ice cream</li>
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="foot_3 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Instagram</p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+          <img src="./assets/pic/footer_3/project pic44.png" alt="">
+          <img src="./assets/pic/footer_3/project pic45.png" alt="">
+
+          <img src="./assets/pic/footer_3/project pic47.png" alt="">
+          <img src="./assets/pic/footer_3/project pic46.png" alt="">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+
+
+        </div>
+      </div>
+      <div class="foot_4 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Subscribe</p>
+        <p>Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et</p>
+        <div class="foot_input_box">
+          <input type="text" placeholder="Enter Your Email" class="p-2 border-0 outline-0 m-0 foot_input">
+          <button class="py-2 px-3 text-light main_col_bg  outline-0 m-0 "><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="my-3">
+          <i class="fa-brands fa-facebook-f to_main_col mx-1"></i>
+          <i class="fa-brands fa-twitter to_main_col mx-1"></i>
+          <i class="fa-brands fa-skype to_main_col mx-1"></i>
+          <i class="fa-brands fa-instagram to_main_col mx-1"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot_foot text-light text-center p-4">
+      <p>© Copyright Cafeu. 2022 All Right Reserved</p>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

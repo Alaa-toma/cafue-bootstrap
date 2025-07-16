@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- main css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- project css file -->
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/about_blog.css">
+    <title>Cafeu</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light position-sticky top-0 ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/pic/logo.webp" alt="logo"></a>
+
+      <a class="btn navbar-toggler " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+      </a>
+      
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item ">
+          <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+      
+    </div>
+    <div class="d-flex gap-3">
+        <img src="./assets/pic/header_call.webp" alt="call">
+        <span class="num_call">+880 123 456 789</span>
+  
+
+      </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cafeu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body ">
+    <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-2">
+        <li class="nav-item ">
+          <a class="nav-link sec_col to_main_col" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col active" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link sec_col to_main_col dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item to_main_col" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item to_main_col" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="to_main_col sec_col nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+  </div>
+</div>
+
+<section class="about_hero p-5 ">
+  <div class="d-flex direction_col  align-items-center">
+    <h1 class="fs-1 fw-bolder">About Us!</h1>
+    <h2 class="fs-2 fw-bold">Meet Our Team...</h2>
+  </div>
+
+
+</section>
+
+<section class="about1 py-5">
+  <div class="container ">
+
+    <div class="d-flex flex-wrap gap-5 py-5 ">
+
+      <div class="part1 col-md-5 " >
+        <img class="img-fluid" src="./assets/pic/about/about11.jpg" alt="">
+      </div>
+      <div class="part2 col-md-6  d-flex flex-column gap-3 justify-content-center h-100">
+        <span class="txt_main_col fs-5 fw-bold sub_font">About Us</span>
+        <h3 class="text-dark fs-1 fw-bold">Why We Are The Best?</h3>
+        <p>Quis autem vel eum iure reprehenderit qui in evoluptate velit esse qua nihil molestiae consequatur, 
+          vel illum qui dolorem eum fugiat quvoluptas nulla pariatureaque ipsa quae ab illo inventore veritatis et quasi 
+          architecto beatae vitae dicta sunt explicabo.</p>
+          <div class="d-flex gap-3">
+            <img class="p-3" src="./assets/pic/project pic07.png" alt="">
+            <div>
+              <span class="text-dark fs-5 fw-bold">Buffet Service</span>
+              <p>Qariatureaque ipsa quae a illo inventore veritatis et quasi architecto</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <img class="p-3" src="./assets/pic/project pic08.png" alt="">
+            <div>
+              <span class="text-dark  fs-5 fw-bold">Online Booking</span>
+              <p>Qariatureaque ipsa quae a illo inventore veritatis et quasi architecto</p>
+            </div>
+          </div>
+          <div class=" my-4 mb-3" >
+            <a class="see_more_f_m text-light " href="#">See More</a>
+          </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<section class="about-hero-2 py-5">
+  <div class="container">
+    <div class="d-flex flex-column gap-3 align-items-center py-5">
+      <span class="fs-5">CALL TO ACTION</span>
+      <p class="fs-1 fw-bolder">Hire Your Next Candidate On Discate</p>
+      <p class="fs-5 fw-bold">Call Us: +99 698 569 565</p>
+      <div class=" my-4 mb-3" >
+            <a class="see_more_f_m text-light " href="#">Discover More</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="about_team text-center py-5">
+  <div class="container py-5">
+    <h2 class="txt_main_col  fs-4">our team</h2>
+    <p class="text-dark fs-1">Meet Our Team</p>
+    <div class="d-flex gap-5 justify-content-center flex-wrap">
+
+      <div class="person col-md-3 col-sm-5">
+        <div class="pic_box ">
+          <img class="img-fluid" src="./assets/pic/about/project pic29.png" alt="">
+        </div>
+        <div class="content_box mx-5 pt-3 pb-1">
+          <p class="text-dark to_main_col fs-4 fw-bold">Jimmey Aenderson</p>
+          <p class="fs-5">Chief Executive </p>
+        </div>
+      </div>
+
+
+          <div class="person col-md-3 col-sm-5">
+        <div class="pic_box ">
+          <img class="img-fluid" src="./assets/pic/about/project pic30.png" alt="">
+        </div>
+        <div class="content_box mx-5 pt-3 pb-1">
+          <p class="text-dark to_main_col fs-4 fw-bold">Mike by Dooley</p>
+          <p class="fs-5">Chief Executive </p>
+        </div>
+      </div>
+
+
+          <div class="person col-md-3 col-sm-5">
+        <div class="pic_box ">
+          <img class="img-fluid" src="./assets/pic/about/project pic29.png" alt="">
+        </div>
+        <div class="content_box mx-5 pt-3 pb-1">
+          <p class="text-dark to_main_col fs-4 fw-bold">Alextina Jimiey</p>
+          <p class="fs-5">Chief Executive </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class=" Available_out py-5">
+<div class="Available   ">
+  <div class="">
+  <div class="container">
+    <div class="row  pt-3 ">
+      <!--part 1-->
+      <div class=" Available_part1 pt-3  col-md-12 col-xl-8  col-sm-12  col-lg-7 mx-0 text-light text-start" >
+        <a class="rounded-circle main_col_bg py-3 px-4 mx-0" href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+        <p class="fs-1 fw-bolder mx-0  pt-5">We Have Excellent Of Quality Japanese Food</p>
+        <p class="my-4 mx-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+      </div>
+ <!--part 2-->
+      <div class="px-0 Available_part2 text-center  col-md-10 col-xl-4 col-lg-5   m-auto">
+
+        <span class="sub_font txt_main_col fs-3">Opening Times</span>
+        <p class="text-dark fs-1 fw-bolder">Check Availability</p>
+
+        <ul class="list-group list-group-flush avail_list">
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Sunday to Tuesday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Friday to Sunday</p>
+                <p> 06:00 - 09:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Sunday to Tuesday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Monday to Friday</p>
+                <p> 06:00 - 09:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Monday to Saturday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              
+        </ul>
+        <span class="sub_font to_main_col fs-4">Call Us Now</span>
+        <p class="sub_font to_main_col fs-4">+993240-765230</p>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<div id="carouselExampleIndicators" class="carousel slide costumers py-5" data-bs-ride="carousel">
+ 
+  <div class="carousel-inner px-5">
+
+   <div class="carousel-item active">
+       <div class="costomer_card  m-auto">
+        <div class="d-flex costomer_car_f justify-content-between">
+      <div class="customer_content ps-3 ">
+        <img src="./assets/pic/about/colon7.webp" alt="">
+        <p class="text-dark fs-1 fe-bolder">James smith list specifications 2022</p>
+        <p class="fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, recusandae quo reiciendis id aut saepe illo repellat nam magni velit accusamus! Velit, aliquid exercitationem?</p>
+       <p class="text-dark fw-bold">Reson Roy <span>- Tool customer</span></p>
+      </div>
+      <div class="costumer_pic d-flex align-items-center pt-4">
+        <img class="img-fluid " src="./assets/pic/about/project pic37.png" alt="">
+      </div>
+    </div>
+       </div>
+    </div>
+
+
+    <div class="carousel-item ">
+       <div class="costomer_card  m-auto">
+        <div class="d-flex costomer_car_f justify-content-between">
+      <div class="customer_content ps-3 ">
+        <img src="./assets/pic/about/colon7.webp" alt="">
+        <p class="text-dark fs-1 fe-bolder">James smith list specifications 2022</p>
+        <p class="fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, recusandae quo reiciendis id aut saepe illo repellat nam magni velit accusamus! Velit, aliquid exercitationem?</p>
+       <p class="text-dark fw-bold">Reson Roy <span>- Tool customer</span></p>
+      </div>
+      <div class="costumer_pic d-flex align-items-center pt-4">
+        <img class="img-fluid " src="./assets/pic/about/project pic38.png" alt="">
+      </div>
+    </div>
+       </div>
+    </div>
+
+
+
+    <div class="carousel-item ">
+       <div class="costomer_card  m-auto">
+        <div class="d-flex costomer_car_f justify-content-between">
+      <div class="customer_content ps-3 ">
+        <img src="./assets/pic/about/colon7.webp" alt="">
+        <p class="text-dark fs-1 fe-bolder">James smith list specifications 2022</p>
+        <p class="fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, recusandae quo reiciendis id aut saepe illo repellat nam magni velit accusamus! Velit, aliquid exercitationem?</p>
+       <p class="text-dark fw-bold">Reson Roy <span>- Tool customer</span></p>
+      </div>
+      <div class="costumer_pic d-flex align-items-center pt-4">
+        <img class="img-fluid " src="./assets/pic/about/project pic37.png" alt="">
+      </div>
+    </div>
+       </div>
+    </div>
+
+
+     <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  </div>
+  
+</div>
+
+<footer >
+  <div class="container text-light">
+    <div class=" row p-5 justify-content-between  ">
+
+      <div class="foot_1 col-sm-6 col-md-4 col-lg-3 mb-4  ">
+          <div class="d-flex flex-column justify-content-between gap-3 align-items-start">
+            <img src="./assets/pic/footer logo.png" alt="">
+            <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col ">4920 Trails End Road Ft United </p>
+                <span class="p-0 m-0 to_main_col">States, FL 33311</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">nfo@example.com</p>
+                <span class="p-0 m-0 to_main_col">test@example.com</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-phone fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">+123 456 679 123</p>
+                <span class="p-0 m-0 to_main_col" > +123 456 789</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="foot_2 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div>
+
+              <p class="my-3 fs-3" >Quick links</p>
+            <ul class="d-flex flex-column gap-2 ">
+
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+              <li class="to_main_col">Cake</li>
+              <li class="to_main_col">Chocolate</li>
+              <li class="to_main_col">Ice cream</li>
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="foot_3 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Instagram</p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+          <img src="./assets/pic/footer_3/project pic44.png" alt="">
+          <img src="./assets/pic/footer_3/project pic45.png" alt="">
+
+          <img src="./assets/pic/footer_3/project pic47.png" alt="">
+          <img src="./assets/pic/footer_3/project pic46.png" alt="">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+
+
+        </div>
+      </div>
+      <div class="foot_4 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Subscribe</p>
+        <p>Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et</p>
+        <div class="foot_input_box">
+          <input type="text" placeholder="Enter Your Email" class="p-2 border-0 outline-0 m-0 foot_input">
+          <button class="py-2 px-3 text-light main_col_bg  outline-0 m-0 "><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="my-3">
+          <i class="fa-brands fa-facebook-f to_main_col mx-1"></i>
+          <i class="fa-brands fa-twitter to_main_col mx-1"></i>
+          <i class="fa-brands fa-skype to_main_col mx-1"></i>
+          <i class="fa-brands fa-instagram to_main_col mx-1"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot_foot text-light text-center p-4">
+      <p>© Copyright Cafeu. 2022 All Right Reserved</p>
+    </div>
+
+
+</footer>
+
+
+
+
+<!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

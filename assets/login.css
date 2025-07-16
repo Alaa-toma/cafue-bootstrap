@@ -1,0 +1,39 @@
+.login_form{
+    box-shadow: 2px 2px 50px 10px rgb(193, 192, 192);
+    background-image: url(./pic/bg-img/project\ pic09.jpg);
+    background-size: 100%;
+}
+.mar_left_50{
+    margin-left: 45%;
+}
+.mar_top_50{
+    margin-top: 100px;
+}
+a{
+    text-decoration: none;
+}
+
+
+.txt_70px{
+    font-size: 70px;
+}
+.welcom_user:hover{
+    color: #cc8888
+}
+.wel_btn:hover{
+    background-color: #cc8888;
+}
+.wel_btn{
+    border: 2px solid #cc8888;
+    color:#cc8888; 
+}
+
+button a{
+    color:#cc8888; 
+}
+button:hover{
+    a{
+    color: white;
+
+    }
+}

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- main css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- project css file -->
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/cart.css">
+    <title>Cafeu</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light position-sticky top-0 ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/pic/logo.webp" alt="logo"></a>
+     <a class="btn navbar-toggler " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+      </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item ">
+          <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+      
+    </div>
+    <div class="d-flex gap-3">
+        <img src="./assets/pic/header_call.webp" alt="call">
+        <span class="num_call">+880 123 456 789</span>
+  
+
+      </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cafeu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body ">
+    <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-2">
+        <li class="nav-item ">
+          <a class="nav-link sec_col to_main_col" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col active" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link sec_col to_main_col dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item to_main_col" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item to_main_col" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="to_main_col sec_col nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+  </div>
+</div>
+
+<section class="cart_hero text-center d-flex justify-content-center align-items-center">
+
+  <div >
+    <h1>your Cart.></h1>
+    <i class="fa-solid fa-cart-shopping fa-2xl my-4"></i>
+    <p class="fs-3">We wish you a pleasant time with our delicious meals.</p>
+  </div>
+
+
+</section>
+
+<!--orders-->
+
+<div class="my_container my-5 ">
+<table class="table ">
+  
+   
+    <thead>
+    <tr>
+      <th scope="col align-middle">Image</th>
+      <td scope="col align-middle">Name</td>
+      <td scope="col align-middle">Price</td>
+      <td scope="col align-middle">Quantity</td>
+      <td scope="col align-middle">Action</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+
+    <th scope="row">
+      <img src="./assets/pic/footer_3/project pic43.png" alt="meal">
+    </th>
+    <td class="align-middle">	The Best Fishermen</td>
+    <td class="align-middle">	$35</td>
+    <td>
+      <div class="d-flex btn_card_box align-middle">
+          <button class="red card_btn" >-</button>
+          <button class="card_btn_mid">1</button>
+          <button class="red card_btn">+</button>
+      </div>
+    </td>
+    <td class="btn_card_box"> 
+      <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
+    </td>
+
+
+    </tr>
+
+    <tr>
+
+      <th scope="row">
+      <img src="./assets/pic/footer_3/project pic45.png" alt="meal">
+    </th>
+    <td class="align-middle">	Roadside Dine Asian</td>
+    <td class="align-middle">	$35</td>
+    <td>
+      <div class="d-flex btn_card_box align-middle">
+          <button class="red card_btn" >-</button>
+          <button class="card_btn_mid">1</button>
+          <button class="red card_btn">+</button>
+      </div>
+    </td>
+    <td class="btn_card_box"> 
+      <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
+    </td>
+    </tr>
+
+    <tr>
+       <th scope="row">
+      <img src="./assets/pic/footer_3/project pic46.png" alt="meal">
+    </th>
+    <td class="align-middle">Roadside Pickups Burger</td>
+    <td class="align-middle">	$35</td>
+    <td>
+      <div class="d-flex btn_card_box align-middle">
+          <button class="red card_btn" >-</button>
+          <button class="card_btn_mid">1</button>
+          <button class="red card_btn">+</button>
+      </div>
+    </td>
+    <td class="btn_card_box"> 
+      <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
+    </td>
+    </tr>
+
+  </tbody>
+  
+</table>
+
+
+
+<div class="container ">
+  <div class="d-flex justify-content-between">
+
+    <a class="tbl_btn" href="./menu.html">Continue Shopping</a>
+    <a class="tbl_btn" href="#">Update</a>
+
+  </div>
+</div>
+</div>
+
+<footer >
+  <div class="container text-light">
+    <div class=" row p-5 justify-content-between  ">
+
+      <div class="foot_1 col-sm-6 col-md-4 col-lg-3 mb-4  ">
+          <div class="d-flex flex-column justify-content-between gap-3 align-items-start">
+            <img src="./assets/pic/footer logo.png" alt="">
+            <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col ">4920 Trails End Road Ft United </p>
+                <span class="p-0 m-0 to_main_col">States, FL 33311</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">nfo@example.com</p>
+                <span class="p-0 m-0 to_main_col">test@example.com</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-phone fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">+123 456 679 123</p>
+                <span class="p-0 m-0 to_main_col" > +123 456 789</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="foot_2 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div>
+
+              <p class="my-3 fs-3" >Quick links</p>
+            <ul class="d-flex flex-column gap-2 ">
+
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+              <li class="to_main_col">Cake</li>
+              <li class="to_main_col">Chocolate</li>
+              <li class="to_main_col">Ice cream</li>
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="foot_3 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Instagram</p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+          <img src="./assets/pic/footer_3/project pic44.png" alt="">
+          <img src="./assets/pic/footer_3/project pic45.png" alt="">
+
+          <img src="./assets/pic/footer_3/project pic47.png" alt="">
+          <img src="./assets/pic/footer_3/project pic46.png" alt="">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+
+
+        </div>
+      </div>
+      <div class="foot_4 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Subscribe</p>
+        <p>Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et</p>
+        <div class="foot_input_box">
+          <input type="text" placeholder="Enter Your Email" class="p-2 border-0 outline-0 m-0 foot_input">
+          <button class="py-2 px-3 text-light main_col_bg  outline-0 m-0 "><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="my-3">
+          <i class="fa-brands fa-facebook-f to_main_col mx-1"></i>
+          <i class="fa-brands fa-twitter to_main_col mx-1"></i>
+          <i class="fa-brands fa-skype to_main_col mx-1"></i>
+          <i class="fa-brands fa-instagram to_main_col mx-1"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot_foot text-light text-center p-4">
+      <p>© Copyright Cafeu. 2022 All Right Reserved</p>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+<!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

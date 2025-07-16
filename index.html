@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- project css file -->
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>Cafeu</title>
+  </head>
+  <body>
+    
+    <nav class="hero_sec_bg navbar navbar-expand-lg navbar-light position-sticky top-0 ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/pic/logo.webp" alt="logo"></a>
+     <a class="btn navbar-toggler " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+      </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+      </ul>
+
+      
+    </div>
+    <div class="d-flex gap-3">
+        <img src="./assets/pic/header_call.webp" alt="call">
+        <span class="num_call">+880 123 456 789</span>
+  
+
+      </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cafeu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body ">
+    <ul class="navbar-nav pe-5 ms-auto mb-2 mb-lg-0 d-flex gap-2">
+        <li class="nav-item ">
+          <a class="nav-link sec_col to_main_col" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./menu.html"> menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col active" href="./about.html">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sec_col to_main_col" href="./blog.html">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link sec_col to_main_col dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item to_main_col" href="./sign up.html">sign up</a></li>
+            <li><a class="dropdown-item to_main_col" href="./log in.html"> log in</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <i class="to_main_col sec_col nav-link fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        </li>
+        
+      </ul>
+
+  </div>
+</div>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide index_hero" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+<section class="hero_sec_bg text-center pb-3 ">
+
+  <div class="d-flex">
+    <div class="container ">
+
+    
+
+    <div class="pt-3 d-flex flex-wrap hero_wrap align-items-center justify-content-center gap-5">
+
+      <div class="text-start hero_part_1 text-capitalize d-flex flex-column  gap-3">
+        <p class="txt_main_col fs-4 sub_font fw-bold">Best In Cafeu</p>
+        <p class="fs-1 fw-bolder text-dark ">BBQ Chicken <span class="txt_main_col text-decoration-underline">salad</span>  With creamy avacado</p>
+        <p>Lorem ipsum dolor sit amet, conscetur adipiscing elit, sed do eimod <br> tempor incididunt ut labore et dolore magna aliqua Quis</p>
+       <div class="d-flex align-items-center hero-btns">
+            <a class=" be_black proj_btn text-light main_col_bg py-2 px-3 " href="#" role="button">Order now</a>
+              <a class="rounded-circle main_col_bg py-3 px-4 ms-5" href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+              <p class="mt-3 ms-2 fw-bold">watch vedio</p>
+        
+        
+        </div>
+      </div>
+      <div class="hero_part_2">
+        <img src="./assets/pic/hero/hero-salad.webp" alt="">
+      </div>
+
+
+
+    </div>
+     
+
+
+  </div>
+  <div class="d-flex flex-column gap-5 width_1 hero_linls">
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Facebook</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Instagram</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Twitter</a>
+    </div>
+    
+  </div>
+
+
+</section>
+
+
+    </div>
+    <div class="carousel-item">
+     
+ <section class="hero_sec_bg text-center pb-3 ">
+
+  <div class="d-flex">
+    <div class="container ">
+
+    
+
+    <div class="pt-3 hero_wrap d-flex flex-wrap align-items-center justify-content-center gap-5">
+
+      <div class="text-start hero_part_1 text-capitalize d-flex flex-column  gap-3">
+        <p class="txt_main_col fs-4 sub_font fw-bold">Best In Cafeu</p>
+        <p class="fs-1 fw-bolder text-dark ">Asian Lettuce Wrap <span class="txt_main_col text-decoration-underline">Chicken</span>  Chopprd Salad</p>
+        <p>Lorem ipsum dolor sit amet, conscetur adipiscing elit, sed do eimod <br> tempor incididunt ut labore et dolore magna aliqua Quis</p>
+       <div class="d-flex align-items-center hero-btns">
+            <a class="be_black proj_btn text-light main_col_bg py-2 px-3 " href="#" role="button">Order now</a>
+              <a class="rounded-circle main_col_bg py-3 px-4 ms-5" href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+              <p class="mt-3 ms-2 fw-bold">watch vedio</p>
+        
+        
+        </div>
+      </div>
+      <div class="hero_part_2">
+        <img src="./assets/pic/hero/hero bg2.webp" alt="">
+      </div>
+
+
+
+    </div>
+     
+
+
+  </div>
+  <div class="d-flex flex-column gap-5 width_1 hero_linls">
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Facebook</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Instagram</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Twitter</a>
+    </div>
+    
+  </div>
+  
+</section>
+
+    </div>
+    <div class="carousel-item">
+      
+
+<section class="hero_sec_bg text-center pb-3 ">
+
+  <div class="d-flex">
+    <div class="container ">
+
+    
+
+    <div class="pt-3 hero_wrap d-flex flex-wrap align-items-center justify-content-center gap-5">
+
+      <div class="text-start hero_part_1 text-capitalize d-flex flex-column  gap-3">
+        <p class="txt_main_col fs-4 sub_font fw-bold">Best In Cafeu</p>
+        <p class="fs-1 fw-bolder text-dark ">Asian Lettuce Wrap <span class="txt_main_col text-decoration-underline">Chicken</span>  Chopprd Salad</p>
+        <p>Lorem ipsum dolor sit amet, conscetur adipiscing elit, sed do eimod <br> tempor incididunt ut labore et dolore magna aliqua Quis</p>
+       <div class="d-flex align-items-center hero-btns">
+            <a class="be_black proj_btn text-light main_col_bg py-2 px-3 " href="#" role="button">Order now</a>
+              <a class="rounded-circle main_col_bg py-3 px-4 ms-5" href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+              <p class="mt-3 ms-2 fw-bold">watch vedio</p>
+        
+        
+        </div>
+      </div>
+      <div class="hero_part_2">
+        <img src="./assets/pic/hero/hero bg 3.webp" alt="">
+      </div>
+
+
+
+    </div>
+     
+
+
+  </div>
+  <div class="d-flex flex-column gap-5 width_1 hero_linls ">
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Facebook</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Instagram</a>
+          <a class="rotated-text my-5 sec_col hero_links" href="#">Twitter</a>
+    </div>
+    
+  </div>
+  
+</section>
+
+
+    </div>
+  </div>
+  
+</div>
+
+<!--sec 2\ cards-->
+<div class="container mar_y_80 pt-5">
+
+  <div class="row  gap-3 justify-content-center">
+
+    <div class="sec2 text-center py-4 px-2">
+
+      <div class="sec2_pic_box w-25 m-auto ">
+        <img class="pos_cen" src="./assets/pic/sec2/project pic01.png" alt="">
+      </div>
+      <div class="sec_2_txt_box my-4">
+        <p class="text-dark fs-4 fw-bold change_col">100% Swiss Quality</p>
+        <p>Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+        <a class="sec_col change_col" href="#"> <i class="fa-solid fa-diamond fa-2xs"></i> Discover More  <i class="fa-solid fa-diamond fa-2xs"></i></a>
+      </div>
+    </div>
+
+    <div class="sec2 px-2 text-center py-4  ">
+
+      <div class="sec2_pic_box w-25 m-auto ">
+        <img class="pos_cen" src="./assets/pic/sec2/project pic03.png" alt="">
+      </div>
+      <div class="sec_2_txt_box my-4">
+        <p class="text-dark fs-4 fw-bold change_col">Organic Production</p>
+        <p>Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+        <a class="sec_col change_col" href="#"> <i class="fa-solid fa-diamond fa-2xs"></i> Discover More  <i class="fa-solid fa-diamond fa-2xs"></i></a>
+      </div>
+    </div>
+
+    <div class="sec2 p2 text-center py-4 ">
+
+      <div class="sec2_pic_box w-25 m-auto ">
+        <img class="pos_cen" src="./assets/pic/sec2/project pic04.png" alt="">
+      </div>
+      <div class="sec_2_txt_box my-4">
+        <p class="text-dark fs-4 fw-bold change_col">Food Law Certified</p>
+        <p>Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+        <a class="sec_col change_col" href="#"> <i class="fa-solid fa-diamond fa-2xs"></i> Discover More  <i class="fa-solid fa-diamond fa-2xs"></i></a>
+      </div>
+    </div>
+
+    <div class="sec2 px-1 text-center py-4 ">
+
+      <div class="sec2_pic_box w-25 m-auto ">
+        <img class="pos_cen" src="./assets/pic/sec2/project pic05.png" alt="">
+      </div>
+      <div class="sec_2_txt_box my-4">
+        <p class="text-dark fs-4 fw-bold change_col">Food Law Certified</p>
+        <p>Lorem ipsum dol consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+        <a class="sec_col change_col" href="#"> <i class="fa-solid fa-diamond fa-2xs"></i> Discover More  <i class="fa-solid fa-diamond fa-2xs"></i></a>
+      </div>
+    </div>
+   
+
+
+  </div>
+
+
+</div>
+<!--email & button-->
+<section class="sec3 mar_y_80 ">
+  <div class="sec_3_filter">
+  <div class="container ">
+    <div class="row py-5 justify-content-center align-items-center">
+      <div class="px=0 sec3_part_1 col-sm-12 col-md-6">
+         <p class="fs-2 fw-bold text-light">Stay Informed About Special Offers</p>
+         <p class="text-light">For Exclusive Deals, Coupons, News and More!</p>
+        </div>
+        <div class="px-0 sec3_part_2 input-group mb-3 flex-grow-1 col-sm-12 col-md-6">
+              <input type="text" class="form-control border-0" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2">
+              <button class="be_black btn main_col_bg text-light" type="button" id="button-addon2">Subscribe</button>
+        </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+<section class="home_menu py-5 mar_y_80">
+  <div class="container text-center">
+    <p class="fs-4  sub_font fw-bold txt_main_col">Special Menu</p>
+    <p class="fs-2 text-dark fw-bolder">Our Specials Menu</p>
+
+      <ul class="d-flex gap-2 justify-content-center  home_menu_list p-0">
+        <li class="to_main_col d-flex direction_col pad_5">
+          <img src="./assets/pic/home-menu/project pic10.png" alt=""> 
+          <span class="fw-bold sub_font   " >All</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5 ">
+          <img src="./assets/pic/home-menu/project pic11.png" alt=""> 
+          <span class="fw-bold sub_font   " >Pizza</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5 ">
+          <img src="./assets/pic/home-menu/project pic12.png" alt=""> 
+          <span class="fw-bold sub_font   " >Asain</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5">
+          <img src="./assets/pic/home-menu/project pic13.png" alt=""> 
+          <span class="fw-bold sub_font   " >Burger</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5">
+          <img src="./assets/pic/home-menu/project pic14.png" alt=""> 
+          <span class="fw-bold sub_font   " >Salad</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5">
+          <img src="./assets/pic/home-menu/project pic15.png" alt=""> 
+          <span class="fw-bold sub_font   " >Bakery</span>
+        </li>
+        <li class="to_main_col d-flex direction_col pad_5 ">
+          <img src="./assets/pic/home-menu/project pic16.png" alt=""> 
+          <span class="fw-bold sub_font   " >Drink</span>
+        </li>
+        
+      </ul>
+
+    <div class="row my-4 card_box justify-content-center flex-wrap  ">
+
+      <div class="card px-0  col-md-6 col-sm-12  ">
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic17.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Grilled Fingerlings Pizza</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card  px-0 col-md-6 col-sm-12 " >
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic18.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Roadside Dine Asian</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+       <div class="card  px-0  col-md-6 col-sm-12 " >
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic19.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Roadside Pickups Burger</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card  px-0 col-md-6 col-sm-12 "  >
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic20.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Chicken Teriyaki Salad</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+       <div class="card  px-0  col-md-6 col-sm-12 "  >
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic21.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Grilled Salmon Bakery</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="card  px-0  col-md-6 col-sm-12 " >
+        <div class="home_menu_img_box">
+          <span class="card_price ">$34 - $40</span>
+          <a href="./meal_details.html"><img src="./assets/pic/home-menu/food/project pic22.png" class="card_img card-img-top" alt="..."></a>
+        </div>
+          <div class="card-body text-start">
+            <h5 class="card-title text-dark">Baked Mushrooms Drink</h5>
+            <p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+            <div class="d-flex justify-content-between">
+                  <a href="#" class="txt_main_col">Delivery Fee : $10</a>
+                  <div class="d-flex gap-3">
+                      <i class="fs-3 home_menu_plus fa-solid fa-plus"></i>
+                      <i class="fs-3 home_menu_cart fa-solid fa-cart-shopping"></i>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+<section class=" phone_out mar_y_80">
+  
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-5 phone_sec">
+
+    <div class="pho_part1 ps-5 ">
+      <p class="text-dark fs-2 fw-bolder pt-3" >Simple Way to Order Your Food Faster</p>
+      <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius-
+            mod tempor incididunt ut labore et dolore magna aliqua. Q ipsum
+            suspendisse ultrices gravida. Risus commodo viverra maeceas
+            accumsan lacus vel facilisis
+      </p>
+      <div class="pho_pic_box d-flex  gap-4 pb-3">
+        <img class="app_icon" src="./assets/pic/phone section/project pic24.png" alt="">
+        <img  class="app_icon" src="./assets/pic/phone section/project pic25.png" alt="">
+      </div>
+    </div>
+    <div class="pho_part2 d-flex gap-4 ">
+      <img class="ph_1" src="./assets/pic/phone section/project pic26.png" alt="">
+      <img class="ph_2" src="./assets/pic/phone section/project pic27.png" alt="">
+    </div>
+
+
+  </div>
+  </div>
+
+
+</section>
+
+<section class=" Available_out mar_y_80">
+<div class="Available   ">
+  <div class="">
+  <div class="container">
+    <div class="row  pt-3 ">
+      <!--part 1-->
+      <div class=" Available_part1 pt-3  col-md-12 col-xl-8  col-sm-12  col-lg-7 mx-0 text-light text-start" >
+        <a class="rounded-circle main_col_bg py-3 px-4 mx-0" href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+        <p class="fs-1 fw-bolder mx-0  pt-5">We Have Excellent Of Quality Japanese Food</p>
+        <p class="my-4 mx-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+      </div>
+ <!--part 2-->
+      <div class="px-0 Available_part2 text-center  col-md-10 col-xl-4 col-lg-5   m-auto">
+
+        <span class="sub_font txt_main_col fs-3">Opening Times</span>
+        <p class="text-dark fs-1 fw-bolder">Check Availability</p>
+
+        <ul class="list-group list-group-flush avail_list">
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Sunday to Tuesday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Friday to Sunday</p>
+                <p> 06:00 - 09:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Sunday to Tuesday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Monday to Friday</p>
+                <p> 06:00 - 09:00</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between to_main_col">
+                <p>Monday to Saturday</p>
+                <p> 09:00 - 06:00</p>
+              </li>
+              
+        </ul>
+        <span class="sub_font to_main_col fs-4">Call Us Now</span>
+        <p class="sub_font to_main_col fs-4">+993240-765230</p>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="black_logos mar_top_3">
+
+  <div class="container black_logos_in d-flex gap-5 py-5 justify-content-between">
+    <img src="./assets/pic/logos/project pic32.png" alt="logo">
+    <img src="./assets/pic/logos/project pic33.png" alt="logo">
+    <img src="./assets/pic/logos/project pic34.png" alt="logo">
+    <img src="./assets/pic/logos/project pic35.png" alt="logo">
+
+  </div>
+
+
+
+</section>
+
+<section class="home_blog text-center  p-5">
+ 
+  <div class="container pb-5">
+ <span class="sub_font txt_main_col fs-3">News & Blog</span>
+  <p class="text-dark fs-1 fw-bold">Latest News</p>
+    <div class="row  flex-wrap justify-content-center gap-3">
+
+      
+
+  <div class="px-0 col-sm-6 col-md-4 col-lg-3 blog_cards ">
+    <div class="card d-flex flex-wrap text-start" >
+        <div class="blog_img_box">
+        <img src="./assets/pic/blog/project pic40.png" class="card-img-top" alt="...">
+        </div>
+      <div class="card-body">
+          <h5 class="card-title mt-3">New Restaurant Town Our Ple Award Contract</h5>
+          <p class="card-text mt-3 ">Drive your business and manage ris with a global industry leader.</p>
+        </div>
+        <div class="d-flex justify-content-between p-4">
+          <span>Jan 1, 2022 - Comments</span>
+          <a href="#">Read More</a>
+        </div>
+        
+</div>
+  </div>
+
+  
+  <div class="px-0 col-sm-6 col-md-4 col-lg-3 blog_cards">
+    <div class="card  d-flex flex-wrap text-start" >
+      <div class="blog_img_box">
+        <img src="./assets/pic/blog/project pic41.png" class="card-img-top" alt="...">
+</div>
+        <div class="card-body">
+          <h5 class="card-title mt-3">Greek yogurt breakfast bowls Ple Award Contract</h5>
+          <p class="card-text mt-3">Drive your business and manage ris with a global industry leader.</p>
+        </div>
+        <div  class="d-flex justify-content-between p-4">
+          <span>Jan 1, 2022 - Comments</span>
+          <a href="#">Read More</a>
+        </div>
+        
+</div>
+  </div>
+
+  
+  <div class="px-0 col-sm-6 col-md-4 col-lg-3 blog_cards ">
+    <div class="card d-flex flex-wrap text-start" >
+       <div class="blog_img_box">
+        <img src="./assets/pic/blog/project pic40.png" class="card-img-top" alt="...">
+</div>
+        <div class="card-body">
+          <h5 class="card-title mt-3">Make Authentic Italian Marg Herita Pizza at Home</h5>
+          <p class="card-text mt-3">Drive your business and manage ris with a global industry leader.</p>
+        </div>
+        <div  class="d-flex justify-content-between p-4">
+          <span>Jan 1, 2022 - Comments</span>
+          <a href="#">Read More</a>
+        </div>
+        
+</div>
+  </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<footer >
+  <div class="container text-light">
+    <div class=" row p-5 justify-content-between  ">
+
+      <div class="foot_1 col-sm-6 col-md-4 col-lg-3 mb-4  ">
+          <div class="d-flex flex-column justify-content-between gap-3 align-items-start">
+            <img src="./assets/pic/footer logo.png" alt="">
+            <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col ">4920 Trails End Road Ft United </p>
+                <span class="p-0 m-0 to_main_col">States, FL 33311</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">nfo@example.com</p>
+                <span class="p-0 m-0 to_main_col">test@example.com</span>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+              <i class="fa-solid fa-phone fa-2xl"></i>
+              <div >
+                <p class="p-0 m-0 to_main_col">+123 456 679 123</p>
+                <span class="p-0 m-0 to_main_col" > +123 456 789</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="foot_2 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div>
+
+              <p class="my-3 fs-3" >Quick links</p>
+            <ul class="d-flex flex-column gap-2 ">
+
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+              <li class="to_main_col">Cake</li>
+              <li class="to_main_col">Chocolate</li>
+              <li class="to_main_col">Ice cream</li>
+              <li class="to_main_col">Pizza</li>
+              <li class="to_main_col">Burger</li>
+
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="foot_3 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Instagram</p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+          <img src="./assets/pic/footer_3/project pic44.png" alt="">
+          <img src="./assets/pic/footer_3/project pic45.png" alt="">
+
+          <img src="./assets/pic/footer_3/project pic47.png" alt="">
+          <img src="./assets/pic/footer_3/project pic46.png" alt="">
+          <img src="./assets/pic/footer_3/project pic43.png" alt="">
+
+
+        </div>
+      </div>
+      <div class="foot_4 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <p class="my-3 fs-3">Subscribe</p>
+        <p>Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et</p>
+        <div class="foot_input_box">
+          <input type="text" placeholder="Enter Your Email" class="p-2 border-0 outline-0 m-0 foot_input">
+          <button class="py-2 px-3 text-light main_col_bg  outline-0 m-0 "><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="my-3">
+          <i class="fa-brands fa-facebook-f to_main_col mx-1"></i>
+          <i class="fa-brands fa-twitter to_main_col mx-1"></i>
+          <i class="fa-brands fa-skype to_main_col mx-1"></i>
+          <i class="fa-brands fa-instagram to_main_col mx-1"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot_foot text-light text-center p-4">
+      <p>© Copyright Cafeu. 2022 All Right Reserved</p>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

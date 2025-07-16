@@ -1,0 +1,116 @@
+.cart_hero{
+    background-image: url(./pic/bg-img/cart-bbg.jpg);
+    background-size: 50%;
+    height: 48vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+   
+}
+.btn_card_box .red{
+    border: 1px solid #cc3333;
+    background-color: #cc3333;
+    color: white;
+    width: fit-content;
+    padding: 7px 13px;
+    text-align: center;
+
+}
+.btn_card_box .card_btn_mid{
+    border: 2px solid #a4a2a2;
+    padding: 7px 13px;
+
+}
+ .btn_card_box .card_btn_mid:hover{
+    border: 2px solid black;
+    }
+.btn_card_box .red:hover{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+thead{
+    background-color: #f3f1f1;
+}
+.tbl_btn{
+    background-color: #cc3333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8%;
+}
+.tbl_btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/*deeeetailsssssss*/
+.meal_det_part2{
+   
+    text-align: start !important;
+}
+
+.meal_det_end span:hover{
+    color: #cc3333;
+    cursor: pointer;
+}
+.meal_det_end i{
+    color: #cc3333;
+}
+.meal_det_end i:hover{
+    color: #666 !important;
+    cursor: pointer;
+}
+
+/*seeeeeeeerviiiiiices*/
+
+.ser_hero{
+    background-image: url(./pic/ser/services-bg.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+
+.serv_content{
+    text-align: center !important;
+}
+.serv_box{
+    position: relative;
+}
+
+.serv_card{
+    border: 1px solid rgb(179, 178, 178, 0.5);
+    box-shadow: 1px 1px 3px 1px rgb(207, 207, 207);
+    position: relative;
+    top: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.serv_card a{
+    color: #cc3333;
+    text-decoration: underline;
+    font-size: 1.2rem
+}
+
+.serv_card:hover{
+background-image: url(./pic/footer.png);
+color: white;
+top: -10px;
+a,
+h3{
+    color: white !important;
+}
+img{
+    filter: invert(100%);
+}
+}
+.see_more_f_m:hover{
+    background-color: #666666;
+    color: white;
+}
+.see_more_f_m{
+    
+    background-color: #cc3333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
