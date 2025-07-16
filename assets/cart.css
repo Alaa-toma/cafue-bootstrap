@@ -1,11 +1,18 @@
 .cart_hero{
-    background-image: url(./pic/bg-img/cart-bbg.jpg);
+    background-image: url(./pic/bg-img/cart-bbg.webp);
     background-size: 50%;
     height: 48vh;
     color: white;
     text-align: center;
     overflow: hidden;
    
+}
+.cart_table_box{
+   width: 95% ;
+}
+.cart_table{
+   
+    overflow: scroll;
 }
 .btn_card_box .red{
     border: 1px solid #cc3333;
@@ -64,7 +71,7 @@ thead{
 /*seeeeeeeerviiiiiices*/
 
 .ser_hero{
-    background-image: url(./pic/ser/services-bg.jpg);
+    background-image: url(./pic/ser/services-bg.webp);
     background-size: cover;
     height: 60vh;
 }
@@ -90,7 +97,7 @@ thead{
 }
 
 .serv_card:hover{
-background-image: url(./pic/footer.png);
+background-image: url(./pic/footer.webp);
 color: white;
 top: -10px;
 a,

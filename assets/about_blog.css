@@ -1,5 +1,5 @@
 .about_hero{
-    background-image: url(./pic/bg-img/about.jpg);
+    background-image: url(./pic/bg-img/about.webp);
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,6 +8,9 @@
     overflow: hidden;
     position: relative;
 
+}
+nav .btn{
+    background-color: transparent;
 }
 .about_hero div{
    position: absolute;
@@ -28,7 +31,7 @@
 }
 
 .about-hero-2{
-    background-image: url(./pic/bg-img/about-bg-21.png);
+    background-image: url(./pic/bg-img/about-bg-21.webp);
     height: fit-content;
     color: white;
 }
@@ -100,6 +103,15 @@
         width: 100%;
     }
 }
+.com_box_2{
+    padding: 0px !important;
+}
+.blog_cont_part1{
+    width: 95%;
+}
+.commenter{
+    width: 70%;
+}
 }
 
 
@@ -160,7 +172,7 @@
 
 /*bloooooooooooooooooog*/
 .blog_hero{
-    background-image: url(./pic/menu-page/menu-page-bg.png);
+    background-image: url(./pic/menu-page/menu-page-bg.webp);
     height: 40vh;
 }
 /*part 1*/

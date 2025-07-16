@@ -187,7 +187,7 @@ margin-top: 100px;
   transition: top 0.5s ease, box-shadow 0.3s ease;
 }
 .sec_2_txt_box{
-  background-image: url(./pic/sec2/card-bg.png);
+  background-image: url(./pic/sec2/card-bg.webp);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center;
@@ -220,7 +220,7 @@ margin-top: 100px;
 /*sec 2 end */
 
 .sec3{
-  background-image: url(./pic/sec3/project\ pic06.png);
+  background-image: url(./pic/sec3/project\ pic06.webp);
   background-size: 100%;
   
   
@@ -295,7 +295,7 @@ textarea:focus,
   width: 10%;
 }
 .home_menu{
-  background-image: url(./pic/bg-img/project\ pic09.jpg);
+  background-image: url(./pic/bg-img/project\ pic09.webp);
   background-size: 100%;
 }
 
@@ -358,7 +358,7 @@ textarea:focus,
 /*start phone*/
 
 .phone_sec{
-  background-image: url(./pic/bg-img/project\ pic23.png);
+  background-image: url(./pic/bg-img/project\ pic23.webp);
   background-size: cover;
   height: 70vh;
 }
@@ -514,7 +514,7 @@ flex-grow: 1;
 
 
 .Available{
-  background-image: url(./pic/bg-img/available.png);
+  background-image: url(./pic/bg-img/available.webp);
   background-repeat: no-repeat;
  
 
@@ -547,7 +547,7 @@ flex-grow: 1;
 
 /*logos*/
 .black_logos{
-  background-image: url(./pic/bg-img/project\ pic31.png);
+  background-image: url(./pic/bg-img/project\ pic31.webp);
   background-size: cover;
   overflow: auto;
 }
@@ -558,7 +558,7 @@ flex-grow: 1;
 
 /*home_blog*/
 .home_blog{
-  background-image: url(./pic/bg-img/project\ pic39.png);
+  background-image: url(./pic/bg-img/project\ pic39.webp);
 }
 .home_blog .card-body{
   border-bottom: 1px solid #666666;
@@ -597,7 +597,7 @@ font-weight: 600;
 /*end blog*/
 
 footer{
-  background-image: url(./pic/footer.png);
+  background-image: url(./pic/footer.webp);
 }
 .foot_input_box{
   width: max-content;
