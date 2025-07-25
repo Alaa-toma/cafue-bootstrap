@@ -12,7 +12,7 @@
 }
 .cart_table{
    
-    overflow: scroll;
+    overflow: auto;
 }
 .btn_card_box .red{
     border: 1px solid #cc3333;
