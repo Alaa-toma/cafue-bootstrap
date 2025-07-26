@@ -4,18 +4,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- main css-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <style>
+ <style>
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
+    <!-- main css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 <!-- bootstrap css file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- project css file -->
-    <link rel="stylesheet" href="./assets/main.css" />
-    <link rel="stylesheet" href="./assets/cart.css">
+   
+    <link rel="stylesheet" href="./assets/team_det.css">
+     <link rel="stylesheet" href="./assets/main.css" />
     <title>Cafeu</title>
   </head>
   <body>
@@ -56,8 +57,8 @@
         <li class="nav-item">
            <a href="Q&A.html"><i class="to_main_col sec_col nav-link fa-solid fa-magnifying-glass"></i></a>
         </li>
-        <li class="nav-item pt-1  nav_cart "   >
-            <a class="active"  href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
+        <li class="nav-item pt-1  nav_cart active"   >
+            <a href="./cart.html"><i class="to_main_col fa-solid fa-cart-shopping fa-xl"></i></a>
         </li>
         
       </ul>
@@ -118,111 +119,92 @@
   </div>
 </div>
 
-<section class="cart_hero text-center d-flex justify-content-center align-items-center">
-
-  <div >
-    <h1>your Cart.></h1>
-    <i class="fa-solid fa-cart-shopping fa-2xl my-4"></i>
-    <p class="fs-3">We wish you a pleasant time with our delicious meals.</p>
-  </div>
-
-
-</section>
-
-<!--orders-->
-
-<div class="container cart_table_box  my-5 ">
-
-  <div class="cart_table">
-      <table class="table ">
-        
-        
-          <thead>
-          <tr>
-            <th scope="col align-middle">Image</th>
-            <td scope="col align-middle">Name</td>
-            <td scope="col align-middle">Price</td>
-            <td scope="col align-middle">Quantity</td>
-            <td scope="col align-middle">Action</td>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-
-          <th scope="row">
-            <img src="./assets/pic/footer_3/project pic43.webp" alt="meal">
-          </th>
-          <td class="align-middle">	The Best Fishermen</td>
-          <td class="align-middle">	$35</td>
-          <td>
-            <div class="d-flex btn_card_box align-middle">
-                <button class="red card_btn" >-</button>
-                <button class="card_btn_mid">1</button>
-                <button class="red card_btn">+</button>
+<section>
+    <div class="container">
+        <div class="row g-3 p-5">
+            <div class="part_1_team_d col-sm-12 col-md-5 col-lg-4">
+                <div class="team_d_pic_box ">
+                    <img class="img-fluid" src="./assets/pic/about/project pic29.webp" alt="">
+                    <div class="team_d_pic_box_content ">
+                        <p class="text-dark fs-5 pt-2">Mike by Dooley</p>
+                        <span >Executive</span>
+                    </div>
+                </div>
+                <div class="py-5 team_d_personal px-2 mt-5">
+                    <h3 class="text-dark pb-2">Personal Info</h3>
+                    <ul>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col">Phone:</span>
+                            <span class="to_main_col">+(123)4567890</span>
+                        </li>
+                        <li class="d-flex justify-content-between  py-1">
+                            <span class="to_main_col">Office:</span>
+                            <span class="to_main_col">+(123)4567890</span>
+                        </li>
+                        <li class="d-flex justify-content-between  py-1">
+                            <span class="to_main_col">E-mail:</span>
+                            <span class="to_main_col">test@example.com</span>
+                        </li>
+                        <li class="d-flex justify-content-between  py-1">
+                            <span class="to_main_col">Gender:</span>
+                            <span class="to_main_col">Male</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </td>
-          <td class="btn_card_box"> 
-            <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
-          </td>
-
-
-          </tr>
-
-          <tr>
-
-            <th scope="row">
-            <img src="./assets/pic/footer_3/project pic45.webp" alt="meal">
-          </th>
-          <td class="align-middle">	Roadside Dine Asian</td>
-          <td class="align-middle">	$35</td>
-          <td>
-            <div class="d-flex btn_card_box align-middle">
-                <button class="red card_btn" >-</button>
-                <button class="card_btn_mid">1</button>
-                <button class="red card_btn">+</button>
+            <div class="part_2_team_d col-sm-12 col-md-7 col-lg-8">
+                <div class="p-3">
+                    <h3 class="text-dark">About Me</h3>
+                    <p>Experience architecture is the art of articulating a clear user story/journey through an infor nteraction design and experience design that an end user navigatesr offered by the clien Experience architecture is the art of articulating a clear</p>
+                </div >
+                <div class="p-3">
+                    <h3 class="text-dark">Working Time</h3>
+                    <ul>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="text-dark to_main_col fs-5">Day</span>
+                            <span class="text-dark to_main_col fs-5">Time</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col">SUN</span>
+                            <span class="to_main_col">	11:30AM - 12:30PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col"> THU</span>
+                            <span class="to_main_col">12:00AM - 05:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col">MON</span>
+                            <span class="to_main_col">02:00AM - 07:30PM</span> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h3 class="text-dark">Working Time</h3>
+                    <ul class="text-start">
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="text-dark to_main_col fs-5">YEAR</span>
+                            <span class="text-dark to_main_col fs-5">DEPARTMENT</span>
+                            <span class="text-dark to_main_col fs-5">POSITION</span>
+                            <span class="text-dark to_main_col fs-5">COMPANY</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col">2007 - 2022</span>
+                            <span class="to_main_col">	Civil Engineer</span>
+                            <span class="to_main_col">Senior Designer</span>
+                            <span class="to_main_col">Midtown Group</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-1">
+                            <span class="to_main_col">2010 - 2020</span>
+                            <span class="to_main_col">	Civil Engineer</span>
+                            <span class="to_main_col">Senior Designer</span>
+                            <span class="to_main_col">Midtown Group</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </td>
-          <td class="btn_card_box"> 
-            <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
-          </td>
-          </tr>
-
-          <tr>
-            <th scope="row">
-            <img src="./assets/pic/footer_3/project pic46.webp" alt="meal">
-          </th>
-          <td class="align-middle">Roadside Pickups Burger</td>
-          <td class="align-middle">	$35</td>
-          <td>
-            <div class="d-flex btn_card_box align-middle">
-                <button class="red card_btn" >-</button>
-                <button class="card_btn_mid">1</button>
-                <button class="red card_btn">+</button>
-            </div>
-          </td>
-          <td class="btn_card_box"> 
-            <button class=" red card_btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
-          </td>
-          </tr>
-
-        </tbody>
-        
-      </table>
-
-
-
-    <div class="container ">
-      <div class="d-flex justify-content-between">
-
-        <a class="tbl_btn" href="./menu.html">Continue Shopping</a>
-        <a class="tbl_btn" href="#">Update</a>
-
-      </div>
+        </div>
     </div>
-  </div>
-
-</div>
+</section> 
 
 <footer >
   <div class="container text-light">
@@ -315,6 +297,10 @@
 
 
 </footer>
+
+
+
+
 
 
 

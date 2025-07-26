@@ -6,6 +6,10 @@
 .mar_left_50{
     margin-left: 45%;
 }
+body{
+    font-family: 'roboto';
+    color: rgb(102, 102, 102);;
+}
 .mar_top_50{
     margin-top: 100px;
 }

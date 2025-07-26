@@ -7,6 +7,10 @@
     overflow: hidden;
    
 }
+body{
+    font-family: 'roboto';
+    color: rgb(102, 102, 102);;
+}
 .cart_table_box{
    width: 95% ;
 }

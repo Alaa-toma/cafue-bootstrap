@@ -3,6 +3,10 @@
     background-image: url(./pic/menu-page/menu-page-bg.webp);
     background-size: 100%;
 }
+:root{
+    font-family: 'roboto';
+    color: rgb(102, 102, 102);;
+}
 
 /*first*/
 .first_menu{

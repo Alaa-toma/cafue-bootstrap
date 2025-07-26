@@ -1,0 +1,24 @@
+.team_d_pic_box_content{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+}
+.team_d_pic_box:hover{
+    .team_d_pic_box_content{
+    border-bottom: 3px solid #c33;
+    }
+}
+.team_d_pic_box{
+    width: fit-content;
+   box-shadow: 1px 1px 25px 2px rgb(177, 176, 176, 0.7);
+}
+.team_d_personal{
+    
+   box-shadow: 1px 1px 25px 2px rgb(177, 176, 176, 0.7);
+}
+.team_d_personal ul{
+    padding: 0px;
+}
