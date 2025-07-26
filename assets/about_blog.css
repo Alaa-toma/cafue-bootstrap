@@ -280,3 +280,28 @@ max-width: 100%;
 .blog_cont_part1 img{
     width: 100%;
 }
+.Popular_Q{
+    background-color: rgb(226, 227, 227, 0.5);
+}
+.accordion-button:not(.collapsed) {
+        background-color: rgb(226, 227, 227);
+}
+
+.Popular_Categories{
+background-color: rgb(241, 245, 255);
+}
+.Popular_Categories_content_box{
+    overflow: auto;
+}
+.pc_box{
+    min-width: 260px;
+}
+.Popular_Categories_price{
+    background-color: white;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 5%;
+    position: relative;
+    bottom: 90px;
+    left: 40px;
+}
