@@ -90,23 +90,25 @@ nav .btn{
 }
 
 
-
+.see_more_f_m:hover{
+    background-color: #000000;
+    color: white;
+}
+.see_more_f_m{
+    
+    background-color: #cc3333;
+    color: white;
+    padding: 10px 15px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*smaal and xs*/
 @media (max-width: 768px){
-/* .costomer_car_f{
-    flex-wrap: wrap;
-}
-.customer_content{
-    width: 100%;
-}
-.costumer_pic{
-    width: 100%;
-    img{
-        width: 100%;
-    }
-}*/
+
 .com_box_2{
     padding: 0px !important;
 }
@@ -121,58 +123,10 @@ nav .btn{
 
 /*medium */
 @media (min-width: 768px) and (max-width: 992px){
-/*.costomer_car_f{
-    justify-content: space-between;
-}
-    .customer_content{
-    width: 58%;
-}
-.costumer_pic{
-    width: 38%;
-    img{
-        width: 100%;
-    }
-}*/
+
 }
 
-/*larg*/
-@media (min-width:992px) and (max-width:1200px){
-/* .costomer_car_f{
-    justify-content: space-between;
-}
-    .customer_content{
-    width: 58%;
-}
-.costumer_pic{
-    width: 38%;
-    img{
-        width: 100%;
-    }
-}*/
-}
-/*xl & xxl*/
-@media (min-width:1200px){
-/*.costomer_car_f{
-    justify-content: space-between;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-    .customer_content{
-    width: 58%;
-    height: max-content ;
-    padding: 7% 1px;
-        margin-top: 2%;
-   
-}
-.costumer_pic{
-    width: 38%;
-    img{
-        width:100%;
-        
-    }
-}*/
-}
+
 
 /*bloooooooooooooooooog*/
 .blog_hero{
