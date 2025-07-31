@@ -214,6 +214,8 @@ max-width: 100%;
 .reply{
      border: 1px solid #cac7c7;
     padding: 4px 10px;
+     border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
 }
 .reply:hover{
     color: white;
@@ -226,7 +228,8 @@ max-width: 100%;
     border: 1px solid #cc3333;
 }
 .sum_com{
-   
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
     background-color: #cc3333;
     color: white;
     padding: 10px 15px   ;
