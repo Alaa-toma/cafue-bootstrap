@@ -647,6 +647,9 @@ footer{
   padding: 30px 50px;
   background-color: rgba(70, 70, 70, 0.7);
 }
+.home_menu_img{
+  user-select: none;
+}
 .prev_prod, .close_modal, .next_prod{
   position: absolute;
   cursor: pointer;
